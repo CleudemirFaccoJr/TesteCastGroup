@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>PerfilColaborador – Pesquisar Certificações</title>
+    <meta name="author" content="Cleudemir Facco Junior">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <span class="navbar-text">
+            <b>CLEUDEMIR FACCO JUNIOR </b>- UX Designer<br />
+            Último acesso: 29/10/2020 - 11:09:34
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="avisos.html"><i class="fas fa-envelope"></i> Avisos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="suporte.html"><i class="fas fa-headset"></i> Suporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html"><i class="fas fa-power-off"></i> Efetuar Logoff</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="homecolaborador.html"><i class="fas fa-home"></i></a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Pesquisar Certificações</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">Filtro</div>
+                    <div class="list-group list-group-flush">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="status">Status:</label>
+                                    <select class="form-control" id="status">
+                                        <option>--Selecione--</option>
+                                        <option>Concluído</option>
+                                        <option>Cursando</option>
+                                        <option>Incompleto</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="anoconclusao">Ano de Conclusão:</label>
+                                    <select class="form-control" id="anoconclusao">
+                                        <option>--Selecione--</option>
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="formacao">Tipo de Formação:</label>
+                                    <select class="form-control" id="formacao">
+                                        <option>--Selecione--</option>
+                                        <option>Gradução</option>
+                                        <option>Tecnólogo</option>
+                                        <option>Extra Curricular</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="instituicao">Instituição:</label>
+                                    <select class="form-control" id="instituicao">
+                                        <option>Faculdade</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="areaatuacao">Área de Atuação:</label>
+                                    <select class="form-control" id="areaatuacao">
+                                        <option>--Selecione--</option>
+                                        <option>Design</option>
+                                        <option>Desenvolvimento Mobile</option>
+                                        <option>Desktop</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="lingprog">Ling. de Programação:</label>
+                                    <select class="form-control" id="lingprog">
+                                        <option>--Selecione--</option>
+                                        <option>PHP</option>
+                                        <option>HTML</option>
+                                        <option>Angular</option>
+                                        <option>C#</option>
+                                        <option>JavaScript</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 botaobusca">
+                                    <button type="button" class="float-right btn btn-primary"><i class="fas fa-search"></i> Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome do Curso</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Ano de Conclusão</th>
+                            <th scope="col">Tipo de Formação</th>
+                            <th scope="col">Instituição</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sistemas para Internet</td>
+                            <td>Concluído</td>
+                            <td>2016</td>
+                            <td>Graduação</td>
+                            <td>FATEC São Roque</td>
+                            <td class="alinhamento"><a href="cadastrarcertificacao.html"><i class="fas fa-edit"></i></a></td>
+                            <td class="alinhamento"><a href="#" class="btnexcluir" data-toggle="modal" data-target="#confirmacaodeletar"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas para Internet</td>
+                            <td>Concluído</td>
+                            <td>2016</td>
+                            <td>Graduação</td>
+                            <td>FATEC São Roque</td>
+                            <td class="alinhamento"><a href="cadastrarcertificacao.html"><i class="fas fa-edit"></i></a></td>
+                            <td class="alinhamento"><a href="#" class="btnexcluir" data-toggle="modal" data-target="#confirmacaodeletar"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas para Internet</td>
+                            <td>Concluído</td>
+                            <td>2016</td>
+                            <td>Graduação</td>
+                            <td>FATEC São Roque</td>
+                            <td class="alinhamento"><a href="cadastrarcertificacao.html"><i class="fas fa-edit"></i></a></td>
+                            <td class="alinhamento"><a href="#" class="btnexcluir" data-toggle="modal" data-target="#confirmacaodeletar"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="paginacao tabela" class="align-right">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container justify-content-between">
+            <a href="homecolaborador.html" class="float-left btn btn-warning"><i class="fas fa-arrow-alt-circle-left"></i> Voltar</a>
+            <a href="cadastrarcertificacao.html" class="float-right btn btn-secondary"><i class="fas fa-edit"></i> Cadastrar Nova</a>
+        </div>
+    </div>
+    <br />
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmacaodeletar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza que deseja excluir o curso selecionado?<br /> Caso delete, será necessário cadastrar novamente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="navbar-dark bg-dark">
+        <img src="../../cast-logo2.png" class="imgrodape" width="122" heigth="57" />
+    </footer>
+
+
+    <script type="text/javascript" src=""></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

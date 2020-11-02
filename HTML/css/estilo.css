@@ -1,0 +1,110 @@
+html,
+body {
+    overflow-x: hidden;
+    height: 100%!important;
+}
+
+.imageform {
+    padding-top: 50px;
+}
+
+.imgrodape {
+    padding: 20px;
+}
+
+.botoesselecao {
+    padding: 10px;
+}
+
+.botoesselecao p {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.botoesselecao btn {
+    padding: 10px;
+}
+
+.botoesselecao i {
+    font-size: 2em;
+}
+
+.btncurriculo {
+    padding: 18px !important;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+}
+
+.btnexcluir {
+    color: #FF1313;
+    text-decoration: none;
+}
+
+.btnexcluir:hover {
+    color: #FC7E7E;
+}
+
+.alinhamento {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
+
+thead {
+    background-color: #5983BE;
+    color: #ffffff;
+}
+
+.gestorview thead {
+    background-color: #5983BE;
+    color: #ffffff;
+
+}
+
+.card label {
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+.botaobusca {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info p{
+    font-size:12px; 
+    margin-bottom: 0px;
+}
+
+.info h5{
+    font-size: 13px;
+}
+
+.informacoespessoais .tab-pane p{
+    padding-left: 25px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff!important;
+    background-color: #0071E2!important;
+    border-color: #0071E2 #0071E2 #fff!important;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
