@@ -1,0 +1,7 @@
+GESTOR
+Usuário: gestor
+Senha: 456789
+
+COLABORADOR
+Usuário: colaborador
+Senha: 123456
